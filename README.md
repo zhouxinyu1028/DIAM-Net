@@ -3,12 +3,11 @@
 ## Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation
 
 <p>
-  <img src="https://img.shields.io/badge/Status-Under%20Review-orange?style=flat-square&logo=github&logoColor=white" alt="Status"/>
+   <img src="https://img.shields.io/badge/Status-Under%20Review-orange?style=flat-square&logo=github&logoColor=white" alt="Status"/>
   <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/PyTorch-2.3+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
   <img src="https://img.shields.io/badge/Datasets-ISIC%202018%20%7C%20Synapse-8A2BE2?style=flat-square" alt="Datasets"/>
-  <img src="https://img.shields.io/badge/Task<img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/c29b9924-7d19-423b-ad42-9ddbc942f5f4" />
--Medical%20Segmentation-1A73E8?style=flat-square" alt="Task"/>
+  <img src="https://img.shields.io/badge/Task-Medical%20Segmentation-1A73E8?style=flat-square" alt="Task"/>
 </p>
 
 ---
