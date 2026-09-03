@@ -7,7 +7,8 @@
   <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/PyTorch-2.3+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
   <img src="https://img.shields.io/badge/Datasets-ISIC%202018%20%7C%20Synapse-8A2BE2?style=flat-square" alt="Datasets"/>
-  <img src="https://img.shields.io/badge/Task-Medical%20Segmentation-1A73E8?style=flat-square" alt="Task"/>
+  <img src="https://img.shields.io/badge/Task<img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/c29b9924-7d19-423b-ad42-9ddbc942f5f4" />
+-Medical%20Segmentation-1A73E8?style=flat-square" alt="Task"/>
 </p>
 
 ---
@@ -56,7 +57,7 @@ The model consists of three core components:
 **Figure 1. Overall architecture of the proposed RAID-Net framework, including the dual-path encoder, SARI, AMRF, and SGDE modules.**
 
 <p align="center">
-  <img width="100%" alt="RAID-Net Architecture" src="docs/fig1_architecture.png" />
+  <img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/cd57bcbf-d15c-45b1-af6c-7f75895ef6f4" />
 </p>
 
 ---
@@ -83,7 +84,7 @@ The model consists of three core components:
 **Figure 2. Qualitative segmentation comparisons on ISIC 2018.**
 
 <p align="center">
-  <img width="100%" alt="ISIC 2018 Visualization" src="docs/fig2_isic_vis.png" />
+ <img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/a6592c6a-58a6-4a5b-aa1b-c32850985eae" />
 </p>
 
 ---
@@ -121,7 +122,7 @@ The model consists of three core components:
 **Figure 3. Qualitative segmentation comparisons on Synapse.**
 
 <p align="center">
-  <img width="100%" alt="Synapse Visualization" src="docs/fig3_synapse_vis.png" />
+<img width="1233" height="899" alt="image11" src="https://github.com/user-attachments/assets/cc60ed81-f08b-41e3-917b-2a7f2f81e323" />
 </p>
 
 ---
