@@ -44,7 +44,6 @@ RAID-Net 是一种面向医学图像分割的新型双路径网络，通过构�
 
 ### 图1：RAID-Net 整体架构
 
-![RAID-Net 整体架构]
 <img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/4ff758a4-43c5-4464-a83d-01d1e5c6981b" />
 
 
