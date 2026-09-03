@@ -1,7 +1,3 @@
-<img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/213b9813-96ae-4ba0-929f-26626d4222b3" /># RAID-Net
-
-> Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation
-
 **面向医学图像分割的可靠性感知交互与自适应多尺度关系融合双路径网络**
 
 ---
