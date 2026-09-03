@@ -56,7 +56,7 @@ The model consists of three core components:
 **Figure 1. Overall architecture of the proposed RAID-Net framework, including the dual-path encoder, SARI, AMRF, and SGDE modules.**
 
 <p align="center">
-  <img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/cd57bcbf-d15c-45b1-af6c-7f75895ef6f4" />
+<img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/217b8a2a-8b19-4e22-a48a-29bcec2401ea" />
 </p>
 
 ---
@@ -66,7 +66,7 @@ The model consists of three core components:
 ### ISIC 2018 — Skin Lesion Segmentation
 
 | Methods | Dice (%) | IoU (%) | ACC (%) | Spe (%) | Sen (%) | Params (M) | FLOPs (G) |
-|:--------|---------:|--------:|--------:|--------:|--------:|-----------:|----------:|
+|:-------:|:--------:|:-------:|:-------:|:-------:|:-------:|:---------:|:--------:|
 | U-Net | 86.12 | 75.66 | 92.22 | 95.00 | 87.69 | 31.04 | 36.92 |
 | AttU-Net | 86.64 | 76.78 | 92.38 | 95.65 | 88.37 | 31.39 | 42.76 |
 | Swin-Unet | 89.24 | 81.28 | 94.45 | 96.35 | 91.09 | 27.17 | 6.16 |
@@ -75,7 +75,6 @@ The model consists of three core components:
 | **RAID-Net (Ours)** | **91.60** | **85.19** | **97.64** | **97.02** | **92.15** | 9.59 | **1.95** |
 
 **Table 1. Quantitative comparison on ISIC 2018 dataset.**
-
 ---
 
 ### Qualitative Results — ISIC 2018
@@ -83,7 +82,7 @@ The model consists of three core components:
 **Figure 2. Qualitative segmentation comparisons on ISIC 2018.**
 
 <p align="center">
- <img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/a6592c6a-58a6-4a5b-aa1b-c32850985eae" />
+<img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/1282b519-63d1-48a3-aeb8-479649d5fb05" />
 </p>
 
 ---
@@ -91,7 +90,7 @@ The model consists of three core components:
 ### Cross-Dataset Generalization — ISIC 2017 & PH2
 
 | Train → Test | Methods | Dice (%) | IoU (%) |
-|:------------:|:--------|:--------:|:-------:|
+|:------------:|:-------:|:--------:|:-------:|
 | <nobr>ISIC 2018 →</nobr><br><nobr>ISIC 2017</nobr> | SVMB-Net | 91.64 | 84.38 |
 | | **RAID-Net** | **92.18** | **85.29** |
 | <nobr>ISIC 2018 →</nobr><br><nobr>PH2</nobr> | SVMB-Net | 91.99 | 84.86 |
@@ -104,7 +103,7 @@ The model consists of three core components:
 ### Synapse — Multi-Organ Segmentation
 
 | Methods | Dice (%) | HD95 (mm) | Params (M) | FLOPs (G) |
-|:--------|---------:|----------:|-----------:|----------:|
+|:-------:|:--------:|:---------:|:----------:|:---------:|
 | TransUNet | 77.48 | 31.69 | 105.28 | 24.73 |
 | Swin-Unet | 79.13 | 21.55 | 27.17 | 6.16 |
 | I²U-Net | 83.22 | 16.82 | 7.03 | 2.74 |
@@ -121,7 +120,7 @@ The model consists of three core components:
 **Figure 3. Qualitative segmentation comparisons on Synapse.**
 
 <p align="center">
-<img width="1233" height="899" alt="image11" src="https://github.com/user-attachments/assets/cc60ed81-f08b-41e3-917b-2a7f2f81e323" />
+<img width="1233" height="899" alt="image11" src="https://github.com/user-attachments/assets/0a77b3c0-b129-4049-b857-3c700609e4ba" />
 </p>
 
 ---
