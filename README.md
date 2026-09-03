@@ -91,10 +91,10 @@ The model consists of three core components:
 ### Cross-Dataset Generalization — ISIC 2017 & PH2
 
 | Train → Test | Methods | Dice (%) | IoU (%) |
-|:-------------|:--------|---------:|--------:|
-| ISIC 2018 → ISIC 2017 | SVMB-Net | 91.64 | 84.38 |
+|:------------:|:--------|:--------:|:-------:|
+| <nobr>ISIC 2018 →</nobr><br><nobr>ISIC 2017</nobr> | SVMB-Net | 91.64 | 84.38 |
 | | **RAID-Net** | **92.18** | **85.29** |
-| ISIC 2018 → PH2 | SVMB-Net | 91.99 | 84.86 |
+| <nobr>ISIC 2018 →</nobr><br><nobr>PH2</nobr> | SVMB-Net | 91.99 | 84.86 |
 | | **RAID-Net** | **92.23** | **85.22** |
 
 **Table 2. Cross-dataset generalization performance.**
