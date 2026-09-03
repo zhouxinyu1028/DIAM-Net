@@ -2,21 +2,18 @@
 
 ## Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Available%20Upon%20Request-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Status"/>
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/PyTorch-2.3+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/Datasets-ISIC%202018%20%7C%20Synapse-8A2BE2?style=for-the-badge" alt="Datasets"/>
-  <img src="https://img.shields.io/badge/Task-Medical%20Segmentation-1A73E8?style=for-the-badge" alt="Task"/>
-  <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="Framework"/>
-  <img src="https://img.shields.io/badge/Paper-Not%20Published-yellow?style=for-the-badge" alt="Paper Status"/>
+<p>
+    <img src="https://img.shields.io/badge/Status-Under%20Review-orange?style=flat-square&logo=github&logoColor=white" alt="Status"/>
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/PyTorch-2.3+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/Datasets-ISIC%202018%20%7C%20Synapse-8A2BE2?style=flat-square" alt="Datasets"/>
+  <img src="https://img.shields.io/badge/Task-Medical%20Segmentation-1A73E8?style=flat-square" alt="Task"/>
 </p>
 
 ---
 
 ## Introduction
 
-This repository corresponds to the paper:
 
 **RAID-Net: Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation**
 
@@ -43,27 +40,15 @@ By introducing **reliability-aware interaction**, **adaptive multi-scale relatio
 
 ---
 
-## Key Metrics
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Params-9.59M-007EC6?style=for-the-badge" alt="Params"/>
-  <img src="https://img.shields.io/badge/FLOPs-1.95G-FF6B6B?style=for-the-badge" alt="FLOPs"/>
-  <img src="https://img.shields.io/badge/ISIC%202018%20Dice-91.60%25-2ea44f?style=for-the-badge" alt="ISIC Dice"/>
-  <img src="https://img.shields.io/badge/Synapse%20Dice-84.50%25-2ea44f?style=for-the-badge" alt="Synapse Dice"/>
-  <img src="https://img.shields.io/badge/Synapse%20HD95-13.22%20mm-FF6B6B?style=for-the-badge" alt="Synapse HD95"/>
-</p>
-
----
-
 ## Network Architecture
 
 The overall architecture of the proposed RAID-Net framework is illustrated in Figure 1.
 
 The model consists of three core components:
 
-- **Semantic-Aware Reliability Interaction (SARI)**
-- **Adaptive Multi-Scale Relation Fusion (AMRF)**
-- **Semantic-Guided Decoding Enhancement (SGDE)**
+- Semantic-Aware Reliability Interaction (SARI)
+- Adaptive Multi-Scale Relation Fusion (AMRF)
+- Semantic-Guided Decoding Enhancement (SGDE)
 
 ---
 
@@ -88,13 +73,13 @@ The model consists of three core components:
 | SVMB-Net | 90.86 | 84.24 | 97.32 | 96.73 | 91.95 | 28.60 | 7.95 |
 | **RAID-Net (Ours)** | **91.60** | **85.19** | **97.64** | **97.02** | **92.15** | 9.59 | **1.95** |
 
-**Table 1. Quantitative comparison on ISIC 2018 dataset.** RAID-Net achieves the highest Dice, IoU, ACC, Spe, and Sen scores with the lowest FLOPs, demonstrating superior segmentation accuracy and computational efficiency.
+**Table 1. Quantitative comparison on ISIC 2018 dataset.**
 
 ---
 
 ### Qualitative Results — ISIC 2018
 
-**Figure 2. Qualitative segmentation comparisons on ISIC 2018.** RAID-Net demonstrates improved boundary consistency and more accurate lesion recovery, particularly in ambiguous and low-contrast regions.
+**Figure 2. Qualitative segmentation comparisons on ISIC 2018.**
 
 <p align="center">
   <img width="100%" alt="ISIC 2018 Visualization" src="https://github.com/user-attachments/assets/ec1d24a0-0680-4259-89f5-5c82ac7a2bcf" />
@@ -111,7 +96,7 @@ The model consists of three core components:
 | ISIC 2018 → PH2 | SVMB-Net | 91.99 | 84.86 |
 | | **RAID-Net** | **92.23** | **85.22** |
 
-**Table 2. Cross-dataset generalization performance.** RAID-Net achieves consistent improvements across different data distributions.
+**Table 2. Cross-dataset generalization performance.**
 
 ---
 
@@ -126,13 +111,13 @@ The model consists of three core components:
 | MS-GBANet | 84.01 | 13.26 | 54.80 | 14.70 |
 | **RAID-Net (Ours)** | **84.50** | **13.22** | 9.59 | **1.95** |
 
-**Table 3. Quantitative comparison on Synapse dataset.** RAID-Net achieves the lowest HD95 with competitive Dice and significantly lower model complexity.
+**Table 3. Quantitative comparison on Synapse dataset.**
 
 ---
 
 ### Qualitative Results — Synapse
 
-**Figure 3. Qualitative segmentation comparisons on Synapse.** RAID-Net demonstrates improved organ boundary consistency and better recovery of small organs.
+**Figure 3. Qualitative segmentation comparisons on Synapse.**
 
 <p align="center">
   <img width="100%" alt="Synapse Visualization" src="https://github.com/user-attachments/assets/699134db-2c89-4802-9cc3-766850fd4f51" />
@@ -163,17 +148,13 @@ Due to dataset license restrictions, the original medical images are not redistr
 
 ---
 
-## 📬 Code & Data Request
+## Code & Data Request
 
 For research collaboration and code/data access, please contact:
 
-<p align="center">
-  <a href="mailto:zhouxinyu2025@hunnu.edu.cn?subject=RAID-Net%20Code%20%26%20Data%20Request&body=Name:%0AInstitution:%0APurpose:%0A">
-    <img src="https://img.shields.io/badge/📧%20Email-zhouxinyu2025@hunnu.edu.cn-1A73E8?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-</p>
+📧 **zhouxinyu2025@hunnu.edu.cn**
 
-> 📝 Please include your **name**, **institution**, and **intended use** in the email.
+Please include your **name**, **institution**, and **intended use** in the email.
 
 ---
 
