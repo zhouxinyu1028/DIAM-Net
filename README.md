@@ -1,9 +1,9 @@
-# RAID-Net
+<h1 align="center" style="font-size: 42px;">RAID-Net</h1>
 
-## Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation
+<h2 align="center" style="font-size: 28px;">Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation</h2>
 
-<p>
-   <img src="https://img.shields.io/badge/Status-Under%20Review-orange?style=flat-square&logo=github&logoColor=white" alt="Status"/>
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Under%20Review-orange?style=flat-square&logo=github&logoColor=white" alt="Status"/>
   <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/PyTorch-2.3+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
   <img src="https://img.shields.io/badge/Datasets-ISIC%202018%20%7C%20Synapse-8A2BE2?style=flat-square" alt="Datasets"/>
@@ -12,7 +12,7 @@
 
 ---
 
-## Introduction
+<h3 style="font-size: 28px;">📌 Introduction</h3>
 
 This repository corresponds to the paper:
 
@@ -29,7 +29,7 @@ By introducing **reliability-aware interaction**, **adaptive multi-scale relatio
 
 ---
 
-## Key Contributions
+<h3 style="font-size: 28px;">🎯 Key Contributions</h3>
 
 - **Semantic-Aware Reliability Interaction (SARI)** — Dynamically gates cross-path information based on path confidence, regional uncertainty, and cross-path response conflicts, suppressing unreliable feature propagation.
 
@@ -41,7 +41,7 @@ By introducing **reliability-aware interaction**, **adaptive multi-scale relatio
 
 ---
 
-## Network Architecture
+<h3 style="font-size: 28px;">🏗️ Network Architecture</h3>
 
 The overall architecture of the proposed RAID-Net framework is illustrated in Figure 1.
 
@@ -56,76 +56,220 @@ The model consists of three core components:
 **Figure 1. Overall architecture of the proposed RAID-Net framework, including the dual-path encoder, SARI, AMRF, and SGDE modules.**
 
 <p align="center">
-<img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/217b8a2a-8b19-4e22-a48a-29bcec2401ea" />
+<img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/29fada49-f2e1-4691-8e2d-931869eb61ec" />
 </p>
 
 ---
 
-## Quantitative Comparison with State-of-the-Art Methods
+<h3 style="font-size: 28px;">📊 Quantitative Comparison with State-of-the-Art Methods</h3>
 
-### ISIC 2018 — Skin Lesion Segmentation
+<h4 style="font-size: 24px;">ISIC 2018 — Skin Lesion Segmentation</h4>
 
-| Methods | Dice (%) | IoU (%) | ACC (%) | Spe (%) | Sen (%) | Params (M) | FLOPs (G) |
-|:-------:|:--------:|:-------:|:-------:|:-------:|:-------:|:---------:|:--------:|
-| U-Net | 86.12 | 75.66 | 92.22 | 95.00 | 87.69 | 31.04 | 36.92 |
-| AttU-Net | 86.64 | 76.78 | 92.38 | 95.65 | 88.37 | 31.39 | 42.76 |
-| Swin-Unet | 89.24 | 81.28 | 94.45 | 96.35 | 91.09 | 27.17 | 6.16 |
-| I²U-Net | 89.64 | 82.14 | 95.69 | 96.98 | 91.37 | 7.03 | 2.74 |
-| SVMB-Net | 90.86 | 84.24 | 97.32 | 96.73 | 91.95 | 28.60 | 7.95 |
-| **RAID-Net (Ours)** | **91.60** | **85.19** | **97.64** | **97.02** | **92.15** | 9.59 | **1.95** |
+<table align="center">
+  <thead>
+    <tr>
+      <th align="center">Methods</th>
+      <th align="center">Dice (%)</th>
+      <th align="center">IoU (%)</th>
+      <th align="center">ACC (%)</th>
+      <th align="center">Spe (%)</th>
+      <th align="center">Sen (%)</th>
+      <th align="center">Params (M)</th>
+      <th align="center">FLOPs (G)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">U-Net</td>
+      <td align="center">86.12</td>
+      <td align="center">75.66</td>
+      <td align="center">92.22</td>
+      <td align="center">95.00</td>
+      <td align="center">87.69</td>
+      <td align="center">31.04</td>
+      <td align="center">36.92</td>
+    </tr>
+    <tr>
+      <td align="center">AttU-Net</td>
+      <td align="center">86.64</td>
+      <td align="center">76.78</td>
+      <td align="center">92.38</td>
+      <td align="center">95.65</td>
+      <td align="center">88.37</td>
+      <td align="center">31.39</td>
+      <td align="center">42.76</td>
+    </tr>
+    <tr>
+      <td align="center">Swin-Unet</td>
+      <td align="center">89.24</td>
+      <td align="center">81.28</td>
+      <td align="center">94.45</td>
+      <td align="center">96.35</td>
+      <td align="center">91.09</td>
+      <td align="center">27.17</td>
+      <td align="center">6.16</td>
+    </tr>
+    <tr>
+      <td align="center">I²U-Net</td>
+      <td align="center">89.64</td>
+      <td align="center">82.14</td>
+      <td align="center">95.69</td>
+      <td align="center">96.98</td>
+      <td align="center">91.37</td>
+      <td align="center">7.03</td>
+      <td align="center">2.74</td>
+    </tr>
+    <tr>
+      <td align="center">SVMB-Net</td>
+      <td align="center">90.86</td>
+      <td align="center">84.24</td>
+      <td align="center">97.32</td>
+      <td align="center">96.73</td>
+      <td align="center">91.95</td>
+      <td align="center">28.60</td>
+      <td align="center">7.95</td>
+    </tr>
+    <tr>
+      <td align="center"><b>RAID-Net (Ours)</b></td>
+      <td align="center"><b>91.60</b></td>
+      <td align="center"><b>85.19</b></td>
+      <td align="center"><b>97.64</b></td>
+      <td align="center"><b>97.02</b></td>
+      <td align="center"><b>92.15</b></td>
+      <td align="center">9.59</td>
+      <td align="center"><b>1.95</b></td>
+    </tr>
+  </tbody>
+</table>
 
-**Table 1. Quantitative comparison on ISIC 2018 dataset.**
+<p align="center"><b>Table 1. Quantitative comparison on ISIC 2018 dataset.</b></p>
+
 ---
 
-### Qualitative Results — ISIC 2018
+<h4 style="font-size: 24px;">🖼️ Qualitative Results — ISIC 2018</h4>
 
 **Figure 2. Qualitative segmentation comparisons on ISIC 2018.**
 
 <p align="center">
-<img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/1282b519-63d1-48a3-aeb8-479649d5fb05" />
+<img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/b77f4bab-1835-4a04-b980-2a1e6bb6d5bf" />
 </p>
 
 ---
 
-### Cross-Dataset Generalization — ISIC 2017 & PH2
+<h4 style="font-size: 24px;">🔄 Cross-Dataset Generalization — ISIC 2017 & PH2</h4>
 
-| Train → Test | Methods | Dice (%) | IoU (%) |
-|:------------:|:-------:|:--------:|:-------:|
-| <nobr>ISIC 2018 →</nobr><br><nobr>ISIC 2017</nobr> | SVMB-Net | 91.64 | 84.38 |
-| | **RAID-Net** | **92.18** | **85.29** |
-| <nobr>ISIC 2018 →</nobr><br><nobr>PH2</nobr> | SVMB-Net | 91.99 | 84.86 |
-| | **RAID-Net** | **92.23** | **85.22** |
+<table align="center">
+  <thead>
+    <tr>
+      <th align="center">Train → Test</th>
+      <th align="center">Methods</th>
+      <th align="center">Dice (%)</th>
+      <th align="center">IoU (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" align="center" valign="middle"><b>ISIC 2018 →<br>ISIC 2017</b></td>
+      <td align="center">SVMB-Net</td>
+      <td align="center">91.64</td>
+      <td align="center">84.38</td>
+    </tr>
+    <tr>
+      <td align="center"><b>RAID-Net (Ours)</b></td>
+      <td align="center"><b>92.18</b></td>
+      <td align="center"><b>85.29</b></td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center" valign="middle"><b>ISIC 2018 →<br>PH2</b></td>
+      <td align="center">SVMB-Net</td>
+      <td align="center">91.99</td>
+      <td align="center">84.86</td>
+    </tr>
+    <tr>
+      <td align="center"><b>RAID-Net (Ours)</b></td>
+      <td align="center"><b>92.23</b></td>
+      <td align="center"><b>85.22</b></td>
+    </tr>
+  </tbody>
+</table>
 
-**Table 2. Cross-dataset generalization performance.**
+<p align="center"><b>Table 2. Cross-dataset generalization performance.</b></p>
 
 ---
 
-### Synapse — Multi-Organ Segmentation
+<h4 style="font-size: 24px;">🧬 Synapse — Multi-Organ Segmentation</h4>
 
-| Methods | Dice (%) | HD95 (mm) | Params (M) | FLOPs (G) |
-|:-------:|:--------:|:---------:|:----------:|:---------:|
-| TransUNet | 77.48 | 31.69 | 105.28 | 24.73 |
-| Swin-Unet | 79.13 | 21.55 | 27.17 | 6.16 |
-| I²U-Net | 83.22 | 16.82 | 7.03 | 2.74 |
-| PSCT-Net | 84.67 | 13.42 | 68.88 | 17.25 |
-| MS-GBANet | 84.01 | 13.26 | 54.80 | 14.70 |
-| **RAID-Net (Ours)** | **84.50** | **13.22** | 9.59 | **1.95** |
+<table align="center">
+  <thead>
+    <tr>
+      <th align="center">Methods</th>
+      <th align="center">Dice (%)</th>
+      <th align="center">HD95 (mm)</th>
+      <th align="center">Params (M)</th>
+      <th align="center">FLOPs (G)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">TransUNet</td>
+      <td align="center">77.48</td>
+      <td align="center">31.69</td>
+      <td align="center">105.28</td>
+      <td align="center">24.73</td>
+    </tr>
+    <tr>
+      <td align="center">Swin-Unet</td>
+      <td align="center">79.13</td>
+      <td align="center">21.55</td>
+      <td align="center">27.17</td>
+      <td align="center">6.16</td>
+    </tr>
+    <tr>
+      <td align="center">I²U-Net</td>
+      <td align="center">83.22</td>
+      <td align="center">16.82</td>
+      <td align="center">7.03</td>
+      <td align="center">2.74</td>
+    </tr>
+    <tr>
+      <td align="center">PSCT-Net</td>
+      <td align="center">84.67</td>
+      <td align="center">13.42</td>
+      <td align="center">68.88</td>
+      <td align="center">17.25</td>
+    </tr>
+    <tr>
+      <td align="center">MS-GBANet</td>
+      <td align="center">84.01</td>
+      <td align="center">13.26</td>
+      <td align="center">54.80</td>
+      <td align="center">14.70</td>
+    </tr>
+    <tr>
+      <td align="center"><b>RAID-Net (Ours)</b></td>
+      <td align="center"><b>84.50</b></td>
+      <td align="center"><b>13.22</b></td>
+      <td align="center">9.59</td>
+      <td align="center"><b>1.95</b></td>
+    </tr>
+  </tbody>
+</table>
 
-**Table 3. Quantitative comparison on Synapse dataset.**
+<p align="center"><b>Table 3. Quantitative comparison on Synapse dataset.</b></p>
 
 ---
 
-### Qualitative Results — Synapse
+<h4 style="font-size: 24px;">🖼️ Qualitative Results — Synapse</h4>
 
 **Figure 3. Qualitative segmentation comparisons on Synapse.**
 
 <p align="center">
-<img width="1233" height="899" alt="image11" src="https://github.com/user-attachments/assets/0a77b3c0-b129-4049-b857-3c700609e4ba" />
+<img width="1233" height="899" alt="image11" src="https://github.com/user-attachments/assets/96d16e04-56ad-4af3-a5ac-a5ccfd51a338" />
 </p>
 
 ---
 
-## Code & Data Availability
+<h3 style="font-size: 28px;">💻 Code & Data Availability</h3>
 
 The source code of **RAID-Net** is available upon reasonable request.
 
@@ -148,7 +292,7 @@ Due to dataset license restrictions, the original medical images are not redistr
 
 ---
 
-## Code & Data Request
+<h3 style="font-size: 28px;">📬 Code & Data Request</h3>
 
 For research collaboration and code/data access, please contact:
 
@@ -158,7 +302,7 @@ Please include your **name**, **institution**, and **intended use** in the email
 
 ---
 
-## Notes
+<h3 style="font-size: 28px;">📝 Notes</h3>
 
 - This project is released for **academic research and non-commercial use only**.
 - Redistribution of the datasets is prohibited.
@@ -167,7 +311,7 @@ Please include your **name**, **institution**, and **intended use** in the email
 
 ---
 
-## Citation
+<h3 style="font-size: 28px;">📄 Citation</h3>
 
 If you use this repository in your research, please cite:
 
