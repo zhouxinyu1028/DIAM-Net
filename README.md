@@ -1,4 +1,4 @@
-# RAID-Net
+<img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/213b9813-96ae-4ba0-929f-26626d4222b3" /># RAID-Net
 
 > Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation
 
@@ -42,28 +42,10 @@ RAID-Net 是一种面向医学图像分割的新型双路径网络，通过构�
 
 ## 🧠 网络架构
 
-### 图1：RAID-Net 整体架构
+### RAID-Net 整体架构
 
 <img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/4ff758a4-43c5-4464-a83d-01d1e5c6981b" />
 
-
-### 图2：SARI 模块
-
-![SARI 模块](docs/fig2_sari.png)
-
-*可靠性感知的双路径交互*
-
-### 图3：AMRF 模块
-
-![AMRF 模块](docs/fig3_amrf.png)
-
-*自适应多尺度关系融合*
-
-### 图4：SGDE 模块
-
-![SGDE 模块](docs/fig4_sgde.png)
-
-*语义引导解码增强*
 
 ---
 
@@ -80,13 +62,11 @@ RAID-Net 是一种面向医学图像分割的新型双路径网络，通过构�
 | SVMB-Net | 90.86 | 84.24 | 97.32 | 96.73 | 91.95 | 28.60 | 7.95 |
 | **RAID-Net** | **91.60** | **85.19** | **97.64** | **97.02** | **92.15** | 9.59 | **1.95** |
 
-### 图5：ISIC 2018 性能-复杂度对比
 
-![ISIC 性能-复杂度](docs/fig5_isic_complexity.png)
 
-### 图6：ISIC 2018 可视化对比
+### ISIC 2018 可视化对比
 
-![ISIC 可视化](docs/fig6_isic_vis.png)
+<img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/ec1d24a0-0680-4259-89f5-5c82ac7a2bcf" />
 
 ---
 
@@ -101,27 +81,11 @@ RAID-Net 是一种面向医学图像分割的新型双路径网络，通过构�
 | MS-GBANet | 84.01 | 13.26 | 54.80 | 14.70 |
 | **RAID-Net** | **84.50** | **13.22** | 9.59 | **1.95** |
 
-### 图7-11：Synapse 实验结果可视化
-
-| 图7：器官热力图 | 图8：性能-复杂度 |
-|:---:|:---:|
-| ![热力图](docs/fig9_synapse_heatmap.png) | ![性能-复杂度](docs/fig10_synapse_complexity.png) |
-
-![Synapse 可视化](docs/fig11_synapse_vis.png)
+### Synapse 实验结果可视化
+<img width="1233" height="899" alt="image11" src="https://github.com/user-attachments/assets/699134db-2c89-4802-9cc3-766850fd4f51" />
 
 ---
 
-## 🔬 消融实验与可解释性
-
-| 图12：SARI 可视化 | 图13：AMRF 尺度选择 |
-|:---:|:---:|
-| ![SARI](docs/fig12_sari_vis.png) | ![AMRF](docs/fig13_amrf_vis.png) |
-
-| 图14：SGDE 误差图 | 图15：Grad-CAM |
-|:---:|:---:|
-| ![SGDE](docs/fig14_sgde_vis.png) | ![Grad-CAM](docs/fig15_gradcam.png) |
-
----
 
 ## 📝 引用
 
