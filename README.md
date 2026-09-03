@@ -3,7 +3,7 @@
 ## Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation
 
 <p>
-    <img src="https://img.shields.io/badge/Status-Under%20Review-orange?style=flat-square&logo=github&logoColor=white" alt="Status"/>
+  <img src="https://img.shields.io/badge/Status-Under%20Review-orange?style=flat-square&logo=github&logoColor=white" alt="Status"/>
   <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/PyTorch-2.3+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
   <img src="https://img.shields.io/badge/Datasets-ISIC%202018%20%7C%20Synapse-8A2BE2?style=flat-square" alt="Datasets"/>
@@ -14,6 +14,7 @@
 
 ## Introduction
 
+This repository corresponds to the paper:
 
 **RAID-Net: Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation**
 
@@ -55,7 +56,7 @@ The model consists of three core components:
 **Figure 1. Overall architecture of the proposed RAID-Net framework, including the dual-path encoder, SARI, AMRF, and SGDE modules.**
 
 <p align="center">
-  <img width="100%" alt="RAID-Net Architecture" src="https://github.com/user-attachments/assets/4ff758a4-43c5-4464-a83d-01d1e5c6981b" />
+  <img width="100%" alt="RAID-Net Architecture" src="docs/fig1_architecture.png" />
 </p>
 
 ---
@@ -82,7 +83,7 @@ The model consists of three core components:
 **Figure 2. Qualitative segmentation comparisons on ISIC 2018.**
 
 <p align="center">
-  <img width="100%" alt="ISIC 2018 Visualization" src="https://github.com/user-attachments/assets/ec1d24a0-0680-4259-89f5-5c82ac7a2bcf" />
+  <img width="100%" alt="ISIC 2018 Visualization" src="docs/fig2_isic_vis.png" />
 </p>
 
 ---
@@ -120,7 +121,7 @@ The model consists of three core components:
 **Figure 3. Qualitative segmentation comparisons on Synapse.**
 
 <p align="center">
-  <img width="100%" alt="Synapse Visualization" src="https://github.com/user-attachments/assets/699134db-2c89-4802-9cc3-766850fd4f51" />
+  <img width="100%" alt="Synapse Visualization" src="docs/fig3_synapse_vis.png" />
 </p>
 
 ---
