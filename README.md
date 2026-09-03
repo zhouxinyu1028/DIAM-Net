@@ -53,17 +53,19 @@ The model consists of three core components:
 
 ---
 
-**Figure 1. Overall architecture of the proposed RAID-Net framework, including the dual-path encoder, SARI, AMRF, and SGDE modules.**
-
 <p align="center">
 <img width="1379" height="622" alt="image1" src="https://github.com/user-attachments/assets/29fada49-f2e1-4691-8e2d-931869eb61ec" />
 </p>
+
+<p align="center"><b>Figure 1. Overall architecture of the proposed RAID-Net framework, including the dual-path encoder, SARI, AMRF, and SGDE modules.</b></p>
 
 ---
 
 <h3 style="font-size: 28px;">📊 Quantitative Comparison with State-of-the-Art Methods</h3>
 
 <h4 style="font-size: 24px;">ISIC 2018 — Skin Lesion Segmentation</h4>
+
+<p align="center"><b>Table 1. Quantitative comparison on ISIC 2018 dataset.</b></p>
 
 <table align="center">
   <thead>
@@ -142,21 +144,21 @@ The model consists of three core components:
   </tbody>
 </table>
 
-<p align="center"><b>Table 1. Quantitative comparison on ISIC 2018 dataset.</b></p>
-
 ---
 
 <h4 style="font-size: 24px;">🖼️ Qualitative Results — ISIC 2018</h4>
-
-**Figure 2. Qualitative segmentation comparisons on ISIC 2018.**
 
 <p align="center">
 <img width="1201" height="693" alt="image6" src="https://github.com/user-attachments/assets/b77f4bab-1835-4a04-b980-2a1e6bb6d5bf" />
 </p>
 
+<p align="center"><b>Figure 2. Qualitative segmentation comparisons on ISIC 2018.</b></p>
+
 ---
 
 <h4 style="font-size: 24px;">🔄 Cross-Dataset Generalization — ISIC 2017 & PH2</h4>
+
+<p align="center"><b>Table 2. Cross-dataset generalization performance.</b></p>
 
 <table align="center">
   <thead>
@@ -193,11 +195,11 @@ The model consists of three core components:
   </tbody>
 </table>
 
-<p align="center"><b>Table 2. Cross-dataset generalization performance.</b></p>
-
 ---
 
 <h4 style="font-size: 24px;">🧬 Synapse — Multi-Organ Segmentation</h4>
+
+<p align="center"><b>Table 3. Quantitative comparison on Synapse dataset.</b></p>
 
 <table align="center">
   <thead>
@@ -255,50 +257,74 @@ The model consists of three core components:
   </tbody>
 </table>
 
-<p align="center"><b>Table 3. Quantitative comparison on Synapse dataset.</b></p>
-
 ---
 
 <h4 style="font-size: 24px;">🖼️ Qualitative Results — Synapse</h4>
-
-**Figure 3. Qualitative segmentation comparisons on Synapse.**
 
 <p align="center">
 <img width="1233" height="899" alt="image11" src="https://github.com/user-attachments/assets/96d16e04-56ad-4af3-a5ac-a5ccfd51a338" />
 </p>
 
+<p align="center"><b>Figure 3. Qualitative segmentation comparisons on Synapse.</b></p>
+
 ---
 
 <h3 style="font-size: 28px;">💻 Code & Data Availability</h3>
 
-The source code of **RAID-Net** is available upon reasonable request.
-
-The released implementation includes:
+The source code of **RAID-Net** is available upon reasonable request for academic purposes. The implementation includes:
 
 - Semantic-Aware Reliability Interaction (SARI)
 - Adaptive Multi-Scale Relation Fusion (AMRF)
 - Semantic-Guided Decoding Enhancement (SGDE)
-- Network construction, loss functions, training and evaluation pipeline
+- Complete training and evaluation pipeline
 
-### Datasets
+**Datasets used in this work:**
 
-Experiments are conducted on:
+<table>
+  <thead>
+    <tr>
+      <th align="center">Dataset</th>
+      <th align="center">Description</th>
+      <th align="center">Official Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><b>ISIC 2018</b></td>
+      <td align="center">Skin lesion segmentation (2,594 dermoscopic images)</td>
+      <td align="center"><a href="https://challenge.isic-archive.com/data/#2018">ISIC Challenge Archive</a></td>
+    </tr>
+    <tr>
+      <td align="center"><b>ISIC 2017</b></td>
+      <td align="center">Skin lesion segmentation (2,000 images)</td>
+      <td align="center"><a href="https://challenge.isic-archive.com/data/#2017">ISIC Challenge Archive</a></td>
+    </tr>
+    <tr>
+      <td align="center"><b>PH2</b></td>
+      <td align="center">Dermoscopic image database (200 images)</td>
+      <td align="center"><a href="https://www.fc.up.pt/addi/ph2%20database.html">PH2 Database</a></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Synapse</b></td>
+      <td align="center">Multi-organ abdominal CT segmentation (30 cases, 8 organs)</td>
+      <td align="center"><a href="https://www.synapse.org/#!Synapse:syn3193805/wiki/217789">Synapse Platform</a></td>
+    </tr>
+  </tbody>
+</table>
 
-- **ISIC 2018** — Skin lesion segmentation
-- **ISIC 2017 / PH2** — Cross-dataset generalization
-- **Synapse** — Multi-organ abdominal CT segmentation
-
-Due to dataset license restrictions, the original medical images are not redistributed in this repository. Researchers should obtain the datasets from the official sources and follow the corresponding access policies.
+> ⚠️ Due to license restrictions, the original medical images are not redistributed. Please obtain them from the official sources.
 
 ---
 
 <h3 style="font-size: 28px;">📬 Code & Data Request</h3>
 
-For research collaboration and code/data access, please contact:
+The code will be made publicly available in this repository upon paper acceptance. During the review process, access is available upon request for academic collaboration and reproducibility purposes.
+
+Please contact us at:
 
 📧 **zhouxinyu2025@hunnu.edu.cn**
 
-Please include your **name**, **institution**, and **intended use** in the email.
+with your **name**, **institution**, and a brief description of your **intended use**.
 
 ---
 
@@ -306,19 +332,22 @@ Please include your **name**, **institution**, and **intended use** in the email
 
 - This project is released for **academic research and non-commercial use only**.
 - Redistribution of the datasets is prohibited.
-- Please cite our work when using this code.
 - Issues and suggestions are welcome.
 
 ---
 
-<h3 style="font-size: 28px;">📄 Citation</h3>
+<h3 style="font-size: 28px;">👏 Acknowledgements</h3>
 
-If you use this repository in your research, please cite:
+<p>
+  We thank the contributors of the <b>ISIC 2018</b>, <b>ISIC 2017</b>, <b>PH2</b>, and <b>Synapse</b> datasets for making their data publicly available.
+</p>
 
-```bibtex
-@article{zhou2026raidnet,
-  title={RAID-Net: Reliability-Aware Interactive Dual-Path Network with Adaptive Multi-Scale Relation Fusion for Medical Image Segmentation},
-  author={Zhou, Xinyu and ...},
-  journal={arXiv preprint},
-  year={2026}
-}
+<p>
+  We also thank all reviewers and colleagues for their valuable feedback and suggestions.
+</p>
+
+---
+
+<p align="center">
+  <b>Thank you for your interest in our work!</b>
+</p>
